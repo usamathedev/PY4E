@@ -4,9 +4,16 @@
 hours = float(input("Enter hours: "))
 rate = float(input("Enter Hourly Rate: "))
 
-if hours > 40 :
-    rate = rate * 1.5
+
 
 pay = hours * rate
 
+
+if hours > 40 :
+    extraHours = hours - 40
+    extraHoursPay = extraHours * (rate * .5)
+    pay = pay + extraHoursPay
+
+    
 print(pay)
+
