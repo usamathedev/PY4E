@@ -38,6 +38,6 @@ def computepay(hours, rate) :
 
 
 try :
-    print(computepay(hours, rate))
+    print("pay", computepay(hours, rate))
 except:
     print("Value should be numerical")
